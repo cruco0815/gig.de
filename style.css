@@ -1,6 +1,5 @@
 /* ==========================================
-   GIG BRACELET 2026
-   STYLE PART 1
+   GIG BRACELET FINAL DESIGN
 ========================================== */
 
 *{
@@ -19,49 +18,21 @@ body{
 background:#000;
 color:white;
 
+height:100vh;
 overflow:hidden;
 
-height:100vh;
-width:100%;
-
 }
 
-/* ==========================
+/* ==========================================
    BACKGROUND
-========================== */
-
-.background-grid{
-
-position:fixed;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:
-linear-gradient(
-90deg,
-rgba(0,255,136,.02) 1px,
-transparent 1px
-),
-linear-gradient(
-rgba(0,255,136,.02) 1px,
-transparent 1px
-);
-
-background-size:80px 80px;
-
-z-index:-3;
-}
+========================================== */
 
 .background-glow{
 
 position:fixed;
 
-right:-350px;
-top:-150px;
+top:-250px;
+right:-250px;
 
 width:1200px;
 height:1200px;
@@ -69,7 +40,7 @@ height:1200px;
 background:
 radial-gradient(
 circle,
-rgba(0,255,136,.20),
+rgba(0,255,136,.18),
 transparent 70%
 );
 
@@ -78,49 +49,43 @@ filter:blur(120px);
 z-index:-2;
 }
 
-/* ==========================
+/* ==========================================
    NAVBAR
-========================== */
+========================================== */
 
 .navbar{
 
-height:100px;
+height:95px;
 
 display:flex;
 
-justify-content:space-between;
-
 align-items:center;
+
+justify-content:space-between;
 
 padding:0 50px;
 
 border-bottom:
-1px solid rgba(0,255,136,.20);
+1px solid rgba(0,255,136,.15);
 
 background:
-rgba(0,0,0,.80);
+rgba(0,0,0,.85);
 
 backdrop-filter:
 blur(20px);
 }
 
-/* ==========================
+/* ==========================================
    LOGO
-========================== */
-
-.logo{
-
-display:flex;
-align-items:center;
-}
+========================================== */
 
 .logo img{
 
-height:120px;
+height:140px;
 
 filter:
 drop-shadow(
-0 0 25px rgba(0,255,136,.50)
+0 0 30px rgba(0,255,136,.45)
 );
 
 transition:.3s;
@@ -132,14 +97,13 @@ transform:scale(1.05);
 
 filter:
 drop-shadow(
-0 0 40px rgba(0,255,136,.8)
+0 0 40px rgba(0,255,136,.7)
 );
-
 }
 
-/* ==========================
+/* ==========================================
    NAVIGATION
-========================== */
+========================================== */
 
 .nav-links{
 
@@ -182,103 +146,81 @@ content:"";
 position:absolute;
 
 left:0;
-bottom:-14px;
+bottom:-12px;
 
 width:100%;
-height:4px;
+height:3px;
 
 background:#00ff88;
 
-border-radius:10px;
+border-radius:50px;
 
 box-shadow:
-0 0 20px #00ff88;
+0 0 15px #00ff88;
 }
 
-/* ==========================
-   RIGHT SIDE
-========================== */
+/* ==========================================
+   CART
+========================================== */
 
-.nav-right{
+.cart{
 
-display:flex;
-
-align-items:center;
-
-gap:25px;
-}
-
-.battery-icon{
+position:relative;
 
 font-size:42px;
 
-color:#00ff88;
+text-decoration:none;
 
-filter:
-drop-shadow(
-0 0 15px rgba(0,255,136,.6)
-);
+color:white;
 }
 
-.config-btn{
+.cart-dot{
 
-padding:
-18px 38px;
+position:absolute;
+
+right:-2px;
+top:2px;
+
+width:12px;
+height:12px;
 
 background:#00ff88;
 
-border-radius:18px;
-
-text-decoration:none;
-
-color:black;
-
-font-weight:800;
-
-font-size:18px;
-
-transition:.3s;
-}
-
-.config-btn:hover{
-
-transform:translateY(-3px);
+border-radius:50%;
 
 box-shadow:
-0 0 35px rgba(0,255,136,.5);
+0 0 15px #00ff88;
 }
 
-/* ==========================
+/* ==========================================
    HERO
-========================== */
+========================================== */
 
 .hero{
 
-height:calc(100vh - 100px);
+height:calc(100vh - 95px);
 
 display:grid;
 
 grid-template-columns:
-45% 55%;
+42% 58%;
 
 align-items:center;
 
 padding:
-20px 60px 40px;
+20px 60px 80px;
 }
 
-/* ==========================
-   HERO LEFT
-========================== */
+/* ==========================================
+   LEFT SIDE
+========================================== */
 
 .hero-left{
 
-max-width:700px;
+max-width:720px;
 }
 
-.hero-subtitle{
-
-display:block;
+.hero-tag{
 
 font-size:14px;
 
@@ -293,16 +235,16 @@ margin-bottom:25px;
 
 .hero-left h1{
 
-font-size:120px;
-
-font-weight:900;
+font-size:135px;
 
 line-height:.85;
+
+font-weight:900;
 
 margin-bottom:30px;
 
 text-shadow:
-0 0 20px rgba(0,255,136,.3),
+0 0 25px rgba(0,255,136,.25),
 0 0 60px rgba(0,255,136,.15);
 }
 
@@ -317,9 +259,9 @@ color:#dddddd;
 margin-bottom:40px;
 }
 
-/* ==========================
+/* ==========================================
    BUTTONS
-========================== */
+========================================== */
 
 .hero-buttons{
 
@@ -327,23 +269,23 @@ display:flex;
 
 gap:20px;
 
-margin-bottom:45px;
+margin-bottom:40px;
 }
 
 .btn-primary{
 
 padding:
-20px 40px;
+20px 34px;
 
 background:#00ff88;
-
-color:black;
-
-font-weight:800;
 
 border-radius:16px;
 
 text-decoration:none;
+
+color:black;
+
+font-weight:800;
 
 transition:.3s;
 }
@@ -359,18 +301,18 @@ box-shadow:
 .btn-secondary{
 
 padding:
-20px 40px;
+20px 34px;
 
 border:
 2px solid #00ff88;
 
-color:white;
-
-font-weight:800;
-
 border-radius:16px;
 
 text-decoration:none;
+
+color:white;
+
+font-weight:800;
 
 transition:.3s;
 }
@@ -389,37 +331,33 @@ color:black;
 
 display:flex;
 
-gap:22px;
-
-margin-top:20px;
+gap:18px;
 }
 
 .stat-card{
 
-width:180px;
-height:180px;
+width:155px;
+height:155px;
 
 background:
 linear-gradient(
 180deg,
 rgba(10,10,10,.95),
-rgba(18,18,18,.98)
+rgba(16,16,16,.98)
 );
 
 border:
-1px solid rgba(0,255,136,.12);
+1px solid rgba(0,255,136,.10);
 
-border-radius:28px;
+border-radius:24px;
 
 display:flex;
-
 flex-direction:column;
 
 justify-content:center;
-
 align-items:center;
 
-transition:.35s;
+transition:.3s;
 }
 
 .stat-card:hover{
@@ -430,35 +368,32 @@ translateY(-8px);
 border-color:#00ff88;
 
 box-shadow:
-0 0 40px rgba(0,255,136,.25);
+0 0 30px rgba(0,255,136,.18);
 }
 
 .stat-icon{
 
-font-size:40px;
+font-size:30px;
 
-margin-bottom:12px;
+margin-bottom:8px;
 }
 
-.stat-card h2{
+.stat-number{
 
-font-size:56px;
+font-size:42px;
 
 font-weight:900;
 
 color:#00ff88;
 
-margin-bottom:8px;
-
-text-shadow:
-0 0 15px rgba(0,255,136,.35);
+margin-bottom:6px;
 }
 
-.stat-card p{
+.stat-text{
 
-font-size:15px;
+font-size:13px;
 
-color:#d4d4d4;
+color:#cfcfcf;
 
 text-align:center;
 }
@@ -474,27 +409,26 @@ position:relative;
 display:flex;
 
 justify-content:center;
-
 align-items:center;
 
 height:100%;
 }
 
 /* ==========================================
-   BRACELET GLOW
+   GLOW
 ========================================== */
 
 .bracelet-glow{
 
 position:absolute;
 
-width:1100px;
-height:1100px;
+width:950px;
+height:950px;
 
 background:
 radial-gradient(
 circle,
-rgba(0,255,136,.25),
+rgba(0,255,136,.20),
 rgba(0,255,136,.08),
 transparent 70%
 );
@@ -505,7 +439,7 @@ z-index:1;
 }
 
 /* ==========================================
-   BRACELET IMAGE
+   BRACELET
 ========================================== */
 
 .bracelet-image{
@@ -514,12 +448,9 @@ position:relative;
 
 z-index:2;
 
-width:900px;
+width:760px;
 
 max-width:none;
-
-animation:
-floatBracelet 7s ease-in-out infinite;
 
 filter:
 drop-shadow(
@@ -528,26 +459,29 @@ drop-shadow(
 drop-shadow(
 0 0 120px rgba(0,255,136,.15)
 );
+
+animation:
+braceletFloat 6s ease-in-out infinite;
 }
 
-@keyframes floatBracelet{
+@keyframes braceletFloat{
 
 0%{
-transform:translateY(0px);
+transform:translateY(0);
 }
 
 50%{
-transform:translateY(-15px);
+transform:translateY(-14px);
 }
 
 100%{
-transform:translateY(0px);
+transform:translateY(0);
 }
 
 }
 
 /* ==========================================
-   HERO FADE ANIMATION
+   FADE EFFECTS
 ========================================== */
 
 .hero-left{
@@ -569,7 +503,7 @@ from{
 opacity:0;
 
 transform:
-translateX(-60px);
+translateX(-50px);
 }
 
 to{
@@ -588,7 +522,7 @@ from{
 opacity:0;
 
 transform:
-translateX(60px);
+translateX(50px);
 }
 
 to{
@@ -612,18 +546,18 @@ left:0;
 
 width:100%;
 
-height:85px;
+height:70px;
 
 display:flex;
 align-items:center;
 
-padding:0 50px;
+padding:0 40px;
 
 border-top:
-1px solid rgba(0,255,136,.15);
+1px solid rgba(0,255,136,.12);
 
 background:
-rgba(0,0,0,.60);
+rgba(0,0,0,.45);
 
 backdrop-filter:
 blur(15px);
@@ -640,17 +574,13 @@ justify-content:space-between;
 align-items:center;
 }
 
-/* LEFT */
-
 .footer-left h3{
 
-font-size:28px;
+font-size:22px;
 
 font-weight:800;
 
 color:white;
-
-margin-bottom:5px;
 }
 
 .footer-left span{
@@ -658,27 +588,18 @@ margin-bottom:5px;
 color:#00ff88;
 }
 
-.footer-left p{
-
-font-size:14px;
-
-color:#8f8f8f;
-}
-
-/* RIGHT */
-
 .footer-right{
 
 display:flex;
 
-gap:30px;
+gap:25px;
 }
 
 .footer-right a{
 
 text-decoration:none;
 
-color:#9d9d9d;
+color:#9f9f9f;
 
 font-size:14px;
 
@@ -697,16 +618,34 @@ color:#00ff88;
 .hero-left h1{
 
 text-shadow:
-0 0 25px rgba(0,255,136,.25),
+0 0 20px rgba(0,255,136,.25),
 0 0 50px rgba(0,255,136,.15),
 0 0 120px rgba(0,255,136,.08);
 }
 
-.config-btn,
-.btn-primary{
+.logo img{
 
-box-shadow:
-0 0 25px rgba(0,255,136,.15);
+animation:
+logoGlow 4s ease-in-out infinite;
+}
+
+@keyframes logoGlow{
+
+0%{
+filter:
+drop-shadow(0 0 20px rgba(0,255,136,.35));
+}
+
+50%{
+filter:
+drop-shadow(0 0 40px rgba(0,255,136,.7));
+}
+
+100%{
+filter:
+drop-shadow(0 0 20px rgba(0,255,136,.35));
+}
+
 }
 
 /* ==========================================
@@ -731,47 +670,12 @@ border-radius:50px;
 }
 
 /* ==========================================
-   1440P / 4K
-========================================== */
-
-@media (min-width:1800px){
-
-.hero-left h1{
-
-font-size:160px;
-}
-
-.hero-left p{
-
-font-size:28px;
-}
-
-.bracelet-image{
-
-width:1100px;
-}
-
-.logo img{
-
-height:160px;
-}
-
-.stat-card{
-
-width:210px;
-height:210px;
-}
-
-}
-
-/* ==========================================
    TABLET
 ========================================== */
 
 @media(max-width:1200px){
 
 body{
-
 overflow:auto;
 }
 
@@ -805,12 +709,12 @@ flex-wrap:wrap;
 
 .hero-right{
 
-margin-top:40px;
+margin-top:30px;
 }
 
 .bracelet-image{
 
-width:700px;
+width:600px;
 
 max-width:100%;
 }
@@ -821,14 +725,14 @@ position:relative;
 
 height:auto;
 
-padding:25px;
+padding:20px;
 }
 
 .footer-container{
 
 flex-direction:column;
 
-gap:20px;
+gap:15px;
 
 text-align:center;
 }
@@ -894,31 +798,31 @@ align-items:center;
 .stat-card{
 
 width:100%;
-max-width:300px;
+max-width:260px;
 }
 
 .bracelet-image{
 
 width:100%;
-max-width:500px;
+max-width:420px;
 }
 
 .footer-right{
 
 flex-direction:column;
 
-gap:10px;
+gap:8px;
 }
 
 }
 
 /* ==========================================
-   SMALL MOBILE
+   SMALL PHONES
 ========================================== */
 
 @media(max-width:500px){
 
-.hero-subtitle{
+.hero-tag{
 
 font-size:11px;
 
@@ -937,7 +841,7 @@ font-size:16px;
 
 .logo img{
 
-height:70px;
+height:65px;
 }
 
 }
@@ -947,12 +851,10 @@ height:70px;
 ========================================== */
 
 img{
-
 user-select:none;
 }
 
 a{
-
 transition:.3s;
 }
 
