@@ -1064,3 +1064,12 @@ position:relative;
 
 margin-top:80px;
 }
+
+/* ==========================================
+   LEGAL PAGES NO GLOW
+========================================== */
+
+body.legal-body .background-glow{
+
+display:none;
+}
