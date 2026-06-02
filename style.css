@@ -1820,6 +1820,11 @@ margin-top:50px;
 
 .plan-card{
 
+display:flex;
+
+flex-direction:column;
+}
+
 background:#0b0b0b;
 
 padding:40px;
