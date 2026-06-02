@@ -1932,6 +1932,9 @@ color:#bdbdbd;
 
 .plan-card ul{
 
+flex-grow:1;
+}
+
 list-style:none;
 
 line-height:2.1;
