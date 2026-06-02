@@ -322,39 +322,41 @@ transform:translateY(-4px);
 box-shadow:
 0 0 35px rgba(0,255,136,.55);
 }
-/* ==========================================
-   STATS CARDS
-========================================== */
+/* ==========================
+   PREMIUM STATS
+========================== */
 
 .stats{
 
 display:flex;
 
-gap:20px;
+gap:30px;
+
+margin-top:20px;
 }
 
 .stat-card{
 
-width:170px;
-height:170px;
+width:220px;
+height:250px;
 
 background:
 linear-gradient(
 180deg,
-rgba(12,12,12,.95),
-rgba(18,18,18,.98)
+#050505,
+#0b0b0b
 );
 
 border:
-1px solid rgba(0,255,136,.15);
+1px solid rgba(0,255,136,.35);
 
-border-radius:26px;
+border-radius:35px;
 
 display:flex;
 flex-direction:column;
 
-justify-content:center;
 align-items:center;
+justify-content:center;
 
 transition:.3s;
 }
@@ -364,52 +366,68 @@ transition:.3s;
 transform:
 translateY(-10px);
 
-border-color:#00ff88;
-
 box-shadow:
-0 0 35px rgba(0,255,136,.25);
+0 0 25px rgba(0,255,136,.20);
 }
-
-/* SYMBOL */
 
 .stat-icon{
 
-font-size:34px;
+font-size:52px;
 
-margin-bottom:10px;
+margin-bottom:20px;
 }
 
 /* ZAHLEN */
 
 .stat-number{
 
-font-size:72px;
+font-size:92px;
 
 font-weight:900;
 
 line-height:1;
 
-color:#00ff88;
+color:#43ff75;
 
-margin-bottom:8px;
+margin-bottom:25px;
 
 text-shadow:
-0 0 15px #00ff88,
-0 0 35px rgba(0,255,136,.7),
-0 0 70px rgba(0,255,136,.35);
+0 0 10px rgba(67,255,117,.25),
+0 0 20px rgba(67,255,117,.15);
+}
+
+/* LINIE */
+
+.stat-number::after{
+
+content:"";
+
+display:block;
+
+width:120px;
+height:3px;
+
+margin:18px auto 0;
+
+background:#43ff75;
+
+border-radius:50px;
+
+box-shadow:
+0 0 12px rgba(67,255,117,.4);
 }
 
 .stat-text{
 
-font-size:14px;
+font-size:18px;
 
-font-weight:600;
+color:#bdbdbd;
 
-color:#d5d5d5;
+font-weight:500;
 
 text-align:center;
 
-max-width:120px;
+margin-top:20px;
 }
 
 /* ==========================================
