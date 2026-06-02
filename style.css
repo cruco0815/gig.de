@@ -1184,3 +1184,553 @@ text-align:center;
 
 color:#00ff88;
 }
+
+/* ==========================================
+   PRODUCT V2
+========================================== */
+
+.product-page{
+
+max-width:1600px;
+
+margin:0 auto;
+
+padding:40px;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.product-hero-v2{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:80px;
+
+align-items:center;
+
+margin-top:60px;
+
+margin-bottom:100px;
+}
+
+.product-label{
+
+display:inline-block;
+
+padding:12px 20px;
+
+border-radius:30px;
+
+background:
+rgba(0,255,136,.10);
+
+border:
+1px solid rgba(0,255,136,.20);
+
+color:#00ff88;
+
+font-weight:800;
+
+letter-spacing:2px;
+}
+
+.product-left-v2 h1{
+
+font-size:120px;
+
+font-weight:900;
+
+line-height:.9;
+
+margin:25px 0;
+}
+
+.product-subtitle{
+
+font-size:22px;
+
+line-height:1.8;
+
+color:#d0d0d0;
+}
+
+.rating-box{
+
+margin-top:25px;
+
+font-size:26px;
+
+color:#00ff88;
+}
+
+.rating-box span{
+
+font-size:18px;
+
+margin-left:10px;
+
+color:#cfcfcf;
+}
+
+.price-box{
+
+font-size:72px;
+
+font-weight:900;
+
+margin-top:30px;
+
+color:#00ff88;
+
+text-shadow:
+0 0 15px rgba(0,255,136,.3);
+}
+
+/* ==========================================
+   PRODUCT IMAGE
+========================================== */
+
+.product-right-v2{
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+}
+
+.product-right-v2 img{
+
+width:700px;
+
+max-width:100%;
+
+filter:
+drop-shadow(
+0 0 50px rgba(0,255,136,.25)
+);
+}
+
+/* ==========================================
+   CONFIGURATOR
+========================================== */
+
+.configurator-v2{
+
+margin-top:60px;
+
+margin-bottom:80px;
+}
+
+.configurator-v2 h2{
+
+font-size:52px;
+
+margin-bottom:15px;
+}
+
+.configurator-v2 p{
+
+color:#bdbdbd;
+
+margin-bottom:35px;
+}
+
+.config-grid-v2{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:30px;
+}
+
+.config-box{
+
+background:#0b0b0b;
+
+padding:35px;
+
+border-radius:25px;
+
+border:
+1px solid rgba(0,255,136,.15);
+}
+
+.config-box h3{
+
+margin-bottom:20px;
+
+font-size:24px;
+}
+
+.config-box select{
+
+width:100%;
+
+padding:18px;
+
+border:none;
+
+outline:none;
+
+border-radius:15px;
+
+background:#151515;
+
+color:white;
+
+font-size:16px;
+}
+
+.config-box input{
+
+width:100%;
+
+margin-top:15px;
+
+padding:18px;
+
+border:none;
+
+outline:none;
+
+border-radius:15px;
+
+background:#151515;
+
+color:white;
+
+font-size:16px;
+}
+
+/* ==========================================
+   MATERIALS
+========================================== */
+
+.materials-section{
+
+margin-top:90px;
+
+margin-bottom:90px;
+}
+
+.materials-section h2{
+
+font-size:52px;
+
+margin-bottom:40px;
+}
+
+.material-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:25px;
+}
+
+.material-card{
+
+background:#0b0b0b;
+
+padding:35px;
+
+border-radius:25px;
+
+border:
+1px solid rgba(0,255,136,.15);
+
+transition:.3s;
+}
+
+.material-card:hover{
+
+transform:
+translateY(-8px);
+
+border-color:#00ff88;
+
+box-shadow:
+0 0 25px rgba(0,255,136,.15);
+}
+
+.material-card h3{
+
+margin-bottom:20px;
+
+color:#00ff88;
+}
+
+.material-card p{
+
+line-height:1.8;
+
+color:#d0d0d0;
+
+margin-bottom:20px;
+}
+
+.material-card span{
+
+color:#9f9f9f;
+
+font-size:14px;
+}
+
+/* ==========================================
+   SUMMARY
+========================================== */
+
+.summary-section{
+
+margin-bottom:100px;
+}
+
+.summary-card{
+
+max-width:700px;
+
+margin:auto;
+
+background:#0b0b0b;
+
+padding:45px;
+
+border-radius:30px;
+
+border:
+1px solid rgba(0,255,136,.15);
+}
+
+.summary-card h2{
+
+margin-bottom:30px;
+
+text-align:center;
+}
+
+.summary-row{
+
+display:flex;
+
+justify-content:space-between;
+
+padding:15px 0;
+
+border-bottom:
+1px solid rgba(255,255,255,.06);
+}
+
+.summary-price{
+
+text-align:center;
+
+font-size:64px;
+
+font-weight:900;
+
+color:#00ff88;
+
+margin-top:35px;
+}
+
+.coming-note{
+
+margin-top:20px;
+
+text-align:center;
+
+color:#8d8d8d;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.coming-soon{
+
+background:#5d5d5d;
+
+color:white;
+
+border:none;
+
+border-radius:16px;
+
+padding:18px 28px;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:not-allowed;
+}
+
+.coming-soon.large{
+
+width:100%;
+
+margin-top:30px;
+
+padding:22px;
+}
+
+/* ==========================================
+   FUNCTIONS
+========================================== */
+
+.functions-intro{
+
+text-align:center;
+
+margin-bottom:60px;
+}
+
+.functions-intro h2{
+
+font-size:58px;
+
+margin-bottom:15px;
+}
+
+.functions-intro p{
+
+font-size:20px;
+
+color:#bdbdbd;
+}
+
+.feature-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+}
+
+.feature-card{
+
+background:#0b0b0b;
+
+padding:35px;
+
+border-radius:25px;
+
+border:
+1px solid rgba(0,255,136,.15);
+}
+
+.feature-card h3{
+
+margin-bottom:20px;
+
+color:#00ff88;
+}
+
+.feature-card ul{
+
+list-style:none;
+
+line-height:2;
+}
+
+.feature-card p{
+
+line-height:1.8;
+
+color:#d0d0d0;
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+.special-users,
+.technology-section,
+.functions-grid-section{
+
+margin-bottom:100px;
+}
+
+.special-users h2,
+.technology-section h2{
+
+font-size:52px;
+
+margin-bottom:35px;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1200px){
+
+.product-hero-v2{
+
+grid-template-columns:1fr;
+}
+
+.config-grid-v2{
+
+grid-template-columns:1fr;
+}
+
+.material-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+}
+
+.feature-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.product-left-v2 h1{
+
+font-size:70px;
+}
+
+.price-box{
+
+font-size:48px;
+}
+
+.material-grid{
+
+grid-template-columns:1fr;
+}
+
+.feature-grid{
+
+grid-template-columns:1fr;
+}
+
+.functions-intro h2,
+.materials-section h2,
+.special-users h2,
+.technology-section h2{
+
+font-size:36px;
+}
+
+.summary-price{
+
+font-size:46px;
+}
+
+}
