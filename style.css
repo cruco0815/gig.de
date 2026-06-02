@@ -1073,3 +1073,114 @@ body.legal-body .background-glow{
 
 display:none;
 }
+
+/* ==========================================
+   ABONNEMENT
+========================================== */
+
+.subscription-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:30px;
+
+margin-top:50px;
+}
+
+.subscription-card{
+
+background:#0b0b0b;
+
+padding:40px;
+
+border-radius:30px;
+
+border:
+1px solid rgba(0,255,136,.15);
+}
+
+.featured{
+
+border:
+2px solid #00ff88;
+
+box-shadow:
+0 0 30px rgba(0,255,136,.15);
+}
+
+.subscription-card h2{
+
+margin-bottom:20px;
+
+color:#00ff88;
+}
+
+.price{
+
+font-size:48px;
+
+font-weight:900;
+
+margin-bottom:25px;
+}
+
+.price span{
+
+font-size:18px;
+
+color:#999;
+}
+
+.subscription-card ul{
+
+list-style:none;
+
+line-height:2;
+}
+
+.coming-soon{
+
+width:100%;
+
+margin-top:30px;
+
+padding:15px;
+
+border:none;
+
+border-radius:15px;
+
+background:#666;
+
+color:white;
+
+font-weight:700;
+
+cursor:not-allowed;
+}
+
+.comparison-table{
+
+width:100%;
+
+border-collapse:collapse;
+}
+
+.comparison-table th,
+.comparison-table td{
+
+padding:18px;
+
+border:
+1px solid rgba(0,255,136,.15);
+
+text-align:center;
+}
+
+.comparison-table th{
+
+color:#00ff88;
+}
