@@ -1,5 +1,6 @@
 /* ==========================================
-   GIG BRACELET FINAL DESIGN
+   GIG BRACELET - MEGA VERSION
+   CSS PART 1
 ========================================== */
 
 *{
@@ -15,17 +16,17 @@ scroll-behavior:smooth;
 
 body{
 
-background:#000;
+background:#020202;
 color:white;
 
 height:100vh;
-overflow:hidden;
 
+overflow:hidden;
 }
 
-/* ==========================================
+/* ==========================
    BACKGROUND
-========================================== */
+========================== */
 
 .background-glow{
 
@@ -40,7 +41,7 @@ height:1200px;
 background:
 radial-gradient(
 circle,
-rgba(0,255,136,.18),
+rgba(0,255,136,.20),
 transparent 70%
 );
 
@@ -49,9 +50,9 @@ filter:blur(120px);
 z-index:-2;
 }
 
-/* ==========================================
+/* ==========================
    NAVBAR
-========================================== */
+========================== */
 
 .navbar{
 
@@ -59,33 +60,32 @@ height:95px;
 
 display:flex;
 
-align-items:center;
-
 justify-content:space-between;
+
+align-items:center;
 
 padding:0 50px;
 
+background:
+rgba(0,0,0,.82);
+
+backdrop-filter:blur(20px);
+
 border-bottom:
 1px solid rgba(0,255,136,.15);
-
-background:
-rgba(0,0,0,.85);
-
-backdrop-filter:
-blur(20px);
 }
 
-/* ==========================================
+/* ==========================
    LOGO
-========================================== */
+========================== */
 
 .logo img{
 
-height:140px;
+height:150px;
 
 filter:
 drop-shadow(
-0 0 30px rgba(0,255,136,.45)
+0 0 35px rgba(0,255,136,.55)
 );
 
 transition:.3s;
@@ -93,25 +93,20 @@ transition:.3s;
 
 .logo img:hover{
 
-transform:scale(1.05);
-
-filter:
-drop-shadow(
-0 0 40px rgba(0,255,136,.7)
-);
+transform:scale(1.04);
 }
 
-/* ==========================================
-   NAVIGATION
-========================================== */
+/* ==========================
+   MENU
+========================== */
 
 .nav-links{
 
 display:flex;
 
-gap:55px;
-
 list-style:none;
+
+gap:55px;
 }
 
 .nav-links a{
@@ -149,52 +144,66 @@ left:0;
 bottom:-12px;
 
 width:100%;
-height:3px;
+height:4px;
 
 background:#00ff88;
 
 border-radius:50px;
 
 box-shadow:
-0 0 15px #00ff88;
+0 0 20px #00ff88;
 }
 
-/* ==========================================
+/* ==========================
    CART
-========================================== */
+========================== */
 
 .cart{
 
 position:relative;
 
-font-size:42px;
+font-size:68px;
 
 text-decoration:none;
 
 color:white;
+
+filter:
+drop-shadow(
+0 0 20px rgba(0,255,136,.5)
+);
 }
 
-.cart-dot{
+.cart-badge{
 
 position:absolute;
 
-right:-2px;
-top:2px;
+top:8px;
+right:-4px;
 
-width:12px;
-height:12px;
-
-background:#00ff88;
+width:18px;
+height:18px;
 
 border-radius:50%;
 
-box-shadow:
-0 0 15px #00ff88;
+background:#00ff88;
+
+color:black;
+
+font-size:11px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-weight:900;
 }
 
-/* ==========================================
+/* ==========================
    HERO
-========================================== */
+========================== */
 
 .hero{
 
@@ -211,35 +220,51 @@ padding:
 20px 60px 80px;
 }
 
-/* ==========================================
+/* ==========================
    LEFT SIDE
-========================================== */
+========================== */
 
 .hero-left{
 
-max-width:720px;
+max-width:750px;
 }
 
 .hero-tag{
 
-font-size:14px;
+display:inline-block;
 
-font-weight:800;
+padding:
+12px 20px;
 
-letter-spacing:6px;
+background:
+rgba(0,255,136,.10);
+
+border:
+1px solid rgba(0,255,136,.20);
+
+border-radius:50px;
+
+font-size:20px;
+
+font-weight:900;
+
+letter-spacing:3px;
 
 color:#00ff88;
 
 margin-bottom:25px;
+
+text-shadow:
+0 0 20px rgba(0,255,136,.4);
 }
 
 .hero-left h1{
 
-font-size:135px;
-
-line-height:.85;
+font-size:140px;
 
 font-weight:900;
+
+line-height:.85;
 
 margin-bottom:30px;
 
@@ -259,9 +284,9 @@ color:#dddddd;
 margin-bottom:40px;
 }
 
-/* ==========================================
-   BUTTONS
-========================================== */
+/* ==========================
+   BUTTON
+========================== */
 
 .hero-buttons{
 
@@ -269,23 +294,23 @@ display:flex;
 
 gap:20px;
 
-margin-bottom:40px;
+margin-bottom:35px;
 }
 
 .btn-primary{
 
 padding:
-20px 34px;
+20px 38px;
 
 background:#00ff88;
 
-border-radius:16px;
-
-text-decoration:none;
-
 color:black;
 
-font-weight:800;
+font-weight:900;
+
+border-radius:18px;
+
+text-decoration:none;
 
 transition:.3s;
 }
@@ -295,61 +320,35 @@ transition:.3s;
 transform:translateY(-4px);
 
 box-shadow:
-0 0 30px rgba(0,255,136,.5);
-}
-
-.btn-secondary{
-
-padding:
-20px 34px;
-
-border:
-2px solid #00ff88;
-
-border-radius:16px;
-
-text-decoration:none;
-
-color:white;
-
-font-weight:800;
-
-transition:.3s;
-}
-
-.btn-secondary:hover{
-
-background:#00ff88;
-
-color:black;
+0 0 35px rgba(0,255,136,.55);
 }
 /* ==========================================
-   STATS
+   STATS CARDS
 ========================================== */
 
 .stats{
 
 display:flex;
 
-gap:18px;
+gap:20px;
 }
 
 .stat-card{
 
-width:155px;
-height:155px;
+width:170px;
+height:170px;
 
 background:
 linear-gradient(
 180deg,
-rgba(10,10,10,.95),
-rgba(16,16,16,.98)
+rgba(12,12,12,.95),
+rgba(18,18,18,.98)
 );
 
 border:
-1px solid rgba(0,255,136,.10);
+1px solid rgba(0,255,136,.15);
 
-border-radius:24px;
+border-radius:26px;
 
 display:flex;
 flex-direction:column;
@@ -363,39 +362,54 @@ transition:.3s;
 .stat-card:hover{
 
 transform:
-translateY(-8px);
+translateY(-10px);
 
 border-color:#00ff88;
 
 box-shadow:
-0 0 30px rgba(0,255,136,.18);
+0 0 35px rgba(0,255,136,.25);
 }
+
+/* SYMBOL */
 
 .stat-icon{
 
-font-size:30px;
+font-size:34px;
 
-margin-bottom:8px;
+margin-bottom:10px;
 }
+
+/* ZAHLEN */
 
 .stat-number{
 
-font-size:42px;
+font-size:72px;
 
 font-weight:900;
 
+line-height:1;
+
 color:#00ff88;
 
-margin-bottom:6px;
+margin-bottom:8px;
+
+text-shadow:
+0 0 15px #00ff88,
+0 0 35px rgba(0,255,136,.7),
+0 0 70px rgba(0,255,136,.35);
 }
 
 .stat-text{
 
-font-size:13px;
+font-size:14px;
 
-color:#cfcfcf;
+font-weight:600;
+
+color:#d5d5d5;
 
 text-align:center;
+
+max-width:120px;
 }
 
 /* ==========================================
@@ -415,20 +429,20 @@ height:100%;
 }
 
 /* ==========================================
-   GLOW
+   BRACELET GLOW
 ========================================== */
 
 .bracelet-glow{
 
 position:absolute;
 
-width:950px;
-height:950px;
+width:1000px;
+height:1000px;
 
 background:
 radial-gradient(
 circle,
-rgba(0,255,136,.20),
+rgba(0,255,136,.22),
 rgba(0,255,136,.08),
 transparent 70%
 );
@@ -439,7 +453,7 @@ z-index:1;
 }
 
 /* ==========================================
-   BRACELET
+   BRACELET IMAGE
 ========================================== */
 
 .bracelet-image{
@@ -448,7 +462,7 @@ position:relative;
 
 z-index:2;
 
-width:760px;
+width:720px;
 
 max-width:none;
 
@@ -471,7 +485,7 @@ transform:translateY(0);
 }
 
 50%{
-transform:translateY(-14px);
+transform:translateY(-12px);
 }
 
 100%{
@@ -481,7 +495,7 @@ transform:translateY(0);
 }
 
 /* ==========================================
-   FADE EFFECTS
+   FADE ANIMATION
 ========================================== */
 
 .hero-left{
@@ -503,7 +517,7 @@ from{
 opacity:0;
 
 transform:
-translateX(-50px);
+translateX(-60px);
 }
 
 to{
@@ -513,6 +527,7 @@ opacity:1;
 transform:
 translateX(0);
 }
+
 }
 
 @keyframes fadeRight{
@@ -522,7 +537,7 @@ from{
 opacity:0;
 
 transform:
-translateX(50px);
+translateX(60px);
 }
 
 to{
@@ -532,6 +547,7 @@ opacity:1;
 transform:
 translateX(0);
 }
+
 }
 /* ==========================================
    FOOTER
@@ -546,7 +562,7 @@ left:0;
 
 width:100%;
 
-height:70px;
+height:75px;
 
 display:flex;
 align-items:center;
@@ -557,10 +573,10 @@ border-top:
 1px solid rgba(0,255,136,.12);
 
 background:
-rgba(0,0,0,.45);
+rgba(0,0,0,.55);
 
 backdrop-filter:
-blur(15px);
+blur(20px);
 }
 
 .footer-container{
@@ -574,34 +590,50 @@ justify-content:space-between;
 align-items:center;
 }
 
+/* LEFT */
+
 .footer-left h3{
 
-font-size:22px;
+font-size:24px;
 
-font-weight:800;
+font-weight:900;
 
-color:white;
+letter-spacing:.5px;
 }
 
 .footer-left span{
 
 color:#00ff88;
+
+text-shadow:
+0 0 15px rgba(0,255,136,.6);
 }
+
+.footer-left p{
+
+font-size:13px;
+
+margin-top:4px;
+
+color:#888;
+}
+
+/* RIGHT */
 
 .footer-right{
 
 display:flex;
 
-gap:25px;
+gap:30px;
 }
 
 .footer-right a{
 
 text-decoration:none;
 
-color:#9f9f9f;
-
 font-size:14px;
+
+color:#a0a0a0;
 
 transition:.3s;
 }
@@ -612,8 +644,39 @@ color:#00ff88;
 }
 
 /* ==========================================
-   PREMIUM EFFECTS
+   PREMIUM GLOW EFFECTS
 ========================================== */
+
+.logo img{
+
+animation:
+logoPulse 4s ease-in-out infinite;
+}
+
+@keyframes logoPulse{
+
+0%{
+filter:
+drop-shadow(
+0 0 25px rgba(0,255,136,.35)
+);
+}
+
+50%{
+filter:
+drop-shadow(
+0 0 45px rgba(0,255,136,.8)
+);
+}
+
+100%{
+filter:
+drop-shadow(
+0 0 25px rgba(0,255,136,.35)
+);
+}
+
+}
 
 .hero-left h1{
 
@@ -623,50 +686,38 @@ text-shadow:
 0 0 120px rgba(0,255,136,.08);
 }
 
-.logo img{
-
-animation:
-logoGlow 4s ease-in-out infinite;
-}
-
-@keyframes logoGlow{
-
-0%{
-filter:
-drop-shadow(0 0 20px rgba(0,255,136,.35));
-}
-
-50%{
-filter:
-drop-shadow(0 0 40px rgba(0,255,136,.7));
-}
-
-100%{
-filter:
-drop-shadow(0 0 20px rgba(0,255,136,.35));
-}
-
-}
-
 /* ==========================================
-   SCROLLBAR
+   LARGE SCREENS
 ========================================== */
 
-::-webkit-scrollbar{
+@media(min-width:1800px){
 
-width:10px;
+.hero-left h1{
+
+font-size:170px;
 }
 
-::-webkit-scrollbar-track{
+.hero-left p{
 
-background:#050505;
+font-size:28px;
 }
 
-::-webkit-scrollbar-thumb{
+.bracelet-image{
 
-background:#00ff88;
+width:900px;
+}
 
-border-radius:50px;
+.logo img{
+
+height:180px;
+}
+
+.stat-card{
+
+width:190px;
+height:190px;
+}
+
 }
 
 /* ==========================================
@@ -690,9 +741,9 @@ padding-top:120px;
 
 .hero-left{
 
-max-width:100%;
-
 text-align:center;
+
+max-width:100%;
 }
 
 .hero-buttons{
@@ -709,7 +760,7 @@ flex-wrap:wrap;
 
 .hero-right{
 
-margin-top:30px;
+margin-top:40px;
 }
 
 .bracelet-image{
@@ -725,7 +776,7 @@ position:relative;
 
 height:auto;
 
-padding:20px;
+padding:25px;
 }
 
 .footer-container{
@@ -760,6 +811,11 @@ height:90px;
 display:none;
 }
 
+.cart{
+
+font-size:48px;
+}
+
 .hero{
 
 padding:120px 20px 40px;
@@ -767,7 +823,7 @@ padding:120px 20px 40px;
 
 .hero-left h1{
 
-font-size:70px;
+font-size:72px;
 }
 
 .hero-left p{
@@ -775,17 +831,14 @@ font-size:70px;
 font-size:18px;
 }
 
-.hero-buttons{
+.hero-tag{
 
-flex-direction:column;
+font-size:14px;
 }
 
-.btn-primary,
-.btn-secondary{
+.hero-buttons{
 
-width:100%;
-
-text-align:center;
+justify-content:center;
 }
 
 .stats{
@@ -798,20 +851,20 @@ align-items:center;
 .stat-card{
 
 width:100%;
-max-width:260px;
+max-width:280px;
 }
 
 .bracelet-image{
 
 width:100%;
-max-width:420px;
+max-width:450px;
 }
 
 .footer-right{
 
 flex-direction:column;
 
-gap:8px;
+gap:10px;
 }
 
 }
@@ -822,16 +875,9 @@ gap:8px;
 
 @media(max-width:500px){
 
-.hero-tag{
-
-font-size:11px;
-
-letter-spacing:3px;
-}
-
 .hero-left h1{
 
-font-size:48px;
+font-size:50px;
 }
 
 .hero-left p{
@@ -839,11 +885,39 @@ font-size:48px;
 font-size:16px;
 }
 
-.logo img{
+.hero-tag{
 
-height:65px;
+font-size:12px;
+
+letter-spacing:2px;
 }
 
+.logo img{
+
+height:70px;
+}
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+background:#050505;
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#00ff88;
+
+border-radius:50px;
 }
 
 /* ==========================================
