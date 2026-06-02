@@ -1,1 +1,216 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,Arial,sans-serif;
+scroll-behavior:smooth;
+}
 
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVIGATION */
+
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(15px);
+z-index:1000;
+border-bottom:1px solid rgba(0,255,136,.2);
+}
+
+.logo img{
+height:70px;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.navbar a:hover{
+color:#00ff88;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+radial-gradient(circle at center,#00ff8820 0%,transparent 60%);
+}
+
+.hero h1{
+font-size:6rem;
+color:#00ff88;
+text-shadow:
+0 0 10px #00ff88,
+0 0 20px #00ff88,
+0 0 40px #00ff88;
+margin-bottom:20px;
+}
+
+.subtitle{
+font-size:2rem;
+margin-bottom:20px;
+}
+
+.hero-text{
+max-width:800px;
+font-size:1.2rem;
+color:#cfcfcf;
+}
+
+.button{
+margin-top:40px;
+display:inline-block;
+padding:18px 40px;
+background:#00ff88;
+color:black;
+font-weight:bold;
+border-radius:50px;
+text-decoration:none;
+transition:.3s;
+}
+
+.button:hover{
+transform:translateY(-3px);
+box-shadow:0 0 30px #00ff88;
+}
+
+/* SEKTIONEN */
+
+section{
+padding:120px 10%;
+}
+
+section h2{
+font-size:3rem;
+margin-bottom:40px;
+color:#00ff88;
+}
+
+/* KARTEN */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(20,20,20,.9);
+border:1px solid rgba(255,255,255,.05);
+padding:30px;
+border-radius:25px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#00ff88;
+box-shadow:0 0 25px rgba(0,255,136,.4);
+}
+
+.card h3{
+color:#00ff88;
+margin-bottom:20px;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin:8px 0;
+}
+
+/* KONFIGURATOR */
+
+select{
+width:100%;
+padding:15px;
+margin-top:10px;
+margin-bottom:20px;
+background:#111;
+color:white;
+border:1px solid #00ff88;
+border-radius:12px;
+}
+
+.price{
+font-size:3rem;
+font-weight:bold;
+color:#00ff88;
+text-shadow:0 0 20px #00ff88;
+}
+
+/* KONTAKT */
+
+#kontakt{
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+padding:60px;
+text-align:center;
+background:#080808;
+border-top:1px solid rgba(0,255,136,.3);
+}
+
+footer p{
+color:#888;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.navbar{
+flex-direction:column;
+padding:20px;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:3.5rem;
+}
+
+.subtitle{
+font-size:1.4rem;
+}
+
+section h2{
+font-size:2rem;
+}
+
+}
