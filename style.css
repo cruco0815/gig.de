@@ -1004,3 +1004,14 @@ line-height:1.8;
 
 color:#d0d0d0;
 }
+
+.footer-left p{
+
+font-size:13px;
+
+margin-top:5px;
+
+color:#888888;
+
+display:block;
+}
