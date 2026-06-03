@@ -2318,8 +2318,12 @@ font-size:38px;
     height: auto;
 }
 
-.nav-actions {
-    order: 3;
+.nav-actions{
+    margin-left:auto;
+}
+
+.cart{
+    font-size:36px;
 }
 
 .nav-links {
