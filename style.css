@@ -2452,40 +2452,43 @@ font-size:38px;
    MOBILE OPTIMIERUNG GIG BRACELET
 ========================================== */
 
+
 @media screen and (max-width: 768px) {
 
-    body{
-        overflow-x:hidden;
-    }
+/* NAVIGATION */
 
-    section{
-        padding:60px 20px;
-    }
+.navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
 
-    /* NAVIGATION */
+.nav-links{
+    display:none;
+}
 
-    .navbar{
-        flex-direction:column;
-        gap:15px;
-        padding:15px 20px;
-    }
+.menu-toggle{
+    display:block;
+    font-size:32px;
+    color:#00ff88;
+}
 
-    .nav-links{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    }
+.logo{
+    order:2;
+}
 
-    .nav-links a{
-        font-size:14px;
-    }
+.nav-actions{
+    order:3;
+}
 
-    .logo img{
-        width:90px;
-        height:auto;
-    }
+.logo img{
+    width:80px;
+    height:auto;
+}
 
+   
     /* HERO */
 
     .hero{
