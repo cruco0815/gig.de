@@ -30,6 +30,10 @@ GIG Bracelet | Produkt
 
 </div>
 
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+  
 <ul class="nav-links">
 
 <li>
@@ -777,7 +781,16 @@ alert(
 
 }
 
-</script>  
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("mobile-active");
+
+}
+
+</script>
   
 </body>
 
