@@ -30,6 +30,10 @@ GIG Abonnements
 
 </div>
 
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+  
 <ul class="nav-links">
 
 <li>
@@ -688,6 +692,15 @@ function showCartMessage(){
 alert(
 "🛒 Dein Warenkorb ist leer.\n\nProdukte und Bestellungen werden in Kürze verfügbar sein."
 );
+
+}
+
+function toggleMenu(){
+
+document
+.querySelector(".nav-links")
+.classList
+.toggle("mobile-active");
 
 }
 
