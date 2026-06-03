@@ -1526,3 +1526,9 @@ font-size:34px;
 }
 
 }
+
+.product-body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
