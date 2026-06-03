@@ -1388,6 +1388,141 @@ background:#00ff88;
 color:black;
 }
 
+/* ==========================================
+   PRODUKTSEITE
+========================================== */
+
+.product-page{
+max-width:1400px;
+margin:auto;
+padding:40px;
+}
+
+.product-hero-v2{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+min-height:80vh;
+}
+
+.product-label{
+display:inline-block;
+padding:12px 20px;
+border-radius:999px;
+background:rgba(0,255,136,.1);
+border:1px solid rgba(0,255,136,.2);
+color:#00ff88;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.product-left-v2 h1{
+font-size:90px;
+font-weight:900;
+line-height:.9;
+margin-bottom:25px;
+}
+
+.product-subtitle{
+font-size:22px;
+line-height:1.8;
+color:#d0d0d0;
+}
+
+.product-right-v2{
+display:flex;
+justify-content:center;
+}
+
+.product-right-v2 img{
+width:100%;
+max-width:550px;
+filter:drop-shadow(0 0 40px rgba(0,255,136,.3));
+}
+
+.price-box{
+margin-top:30px;
+font-size:50px;
+font-weight:900;
+color:#00ff88;
+}
+
+.configurator-v2{
+margin-top:80px;
+}
+
+.configurator-v2 h2,
+.materials-section h2,
+.functions-intro h2,
+.special-users h2,
+.technology-section h2{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.config-grid-v2{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:25px;
+margin-top:30px;
+}
+
+.config-box,
+.config-info,
+.material-card,
+.feature-card,
+.summary-card{
+background:#0b0b0b;
+padding:30px;
+border-radius:24px;
+border:1px solid rgba(0,255,136,.15);
+}
+
+.config-box select,
+.config-box input{
+width:100%;
+padding:15px;
+margin-top:15px;
+border-radius:12px;
+border:none;
+background:#111;
+color:white;
+}
+
+.material-grid,
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+margin-top:30px;
+}
+
+.summary-section{
+margin-top:80px;
+display:flex;
+justify-content:center;
+}
+
+.summary-card{
+max-width:700px;
+width:100%;
+}
+
+.summary-row{
+display:flex;
+justify-content:space-between;
+padding:15px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.summary-price{
+font-size:60px;
+font-weight:900;
+color:#00ff88;
+text-align:center;
+margin:30px 0;
+}
 
 @media (max-width:768px){
 
