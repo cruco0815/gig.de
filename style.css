@@ -2623,3 +2623,20 @@ repeat(auto-fit,minmax(320px,1fr));
 
 gap:30px;
 }
+
+img{
+
+max-width:100%;
+height:auto;
+}
+
+.container{
+
+width:100%;
+max-width:1400px;
+
+margin:auto;
+
+padding:0 20px;
+}
+
