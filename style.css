@@ -1387,3 +1387,41 @@ background:#00ff88;
 
 color:black;
 }
+
+
+@media (max-width:768px){
+
+.product-page{
+overflow-x:hidden;
+}
+
+.product-hero-v2{
+grid-template-columns:1fr !important;
+gap:30px;
+text-align:center;
+}
+
+.product-right-v2 img{
+max-width:320px !important;
+width:100%;
+}
+
+.config-grid-v2{
+grid-template-columns:1fr !important;
+}
+
+.material-grid{
+grid-template-columns:1fr !important;
+}
+
+.feature-grid{
+grid-template-columns:1fr !important;
+}
+
+select,
+input{
+width:100%;
+max-width:100%;
+}
+
+}
