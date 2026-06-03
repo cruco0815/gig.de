@@ -2183,3 +2183,219 @@ font-size:38px;
 }
 
 }
+
+/* ===================================
+   RESPONSIVE DESIGN - GIG BRACELET
+=================================== */
+
+/* Große Monitore */
+
+@media (min-width: 1600px) {
+
+    .container,
+    .hero,
+    .section-container {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Laptop */
+
+@media (max-width: 1200px) {
+
+    .hero {
+        gap: 60px;
+    }
+
+    .hero-image img {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .material-grid,
+    .functions-grid,
+    .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* iPad */
+
+@media (max-width: 1024px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .configurator {
+        grid-template-columns: 1fr;
+    }
+
+    .material-grid,
+    .functions-grid,
+    .plans-grid,
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .comparison-table {
+        overflow-x: auto;
+    }
+}
+
+/* Smartphones */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        line-height: 1;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .price {
+        font-size: 3rem;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .material-grid,
+    .functions-grid,
+    .plans-grid,
+    .feature-grid,
+    .benefits-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .material-card,
+    .function-card,
+    .plan-card,
+    .faq-card {
+        width: 100%;
+    }
+
+    .comparison-table {
+        overflow-x: auto;
+        border-radius: 15px;
+    }
+
+    .comparison-table table {
+        min-width: 750px;
+    }
+
+    .configurator {
+        grid-template-columns: 1fr;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* Kleine iPhones */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .price {
+        font-size: 2.5rem;
+    }
+
+    .card,
+    .material-card,
+    .plan-card,
+    .function-card,
+    .faq-card {
+        padding: 20px;
+    }
+
+    .btn,
+    button {
+        width: 100%;
+    }
+
+    .navbar {
+        gap: 12px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+}
