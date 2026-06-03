@@ -1532,3 +1532,15 @@ background:#050505;
 color:white;
 overflow-x:hidden;
 }
+
+.subscription-body{
+    background:#050505;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+.subscription-page{
+    max-width:1400px;
+    margin:auto;
+    padding:40px;
+}
