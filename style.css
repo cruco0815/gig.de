@@ -1387,3 +1387,53 @@ background:#00ff88;
 
 color:black;
 }
+
+
+@media (max-width:768px){
+
+.product-page{
+padding:20px !important;
+}
+
+.product-hero-v2{
+display:flex !important;
+flex-direction:column !important;
+text-align:center !important;
+gap:30px !important;
+}
+
+.product-right-v2 img{
+width:100% !important;
+max-width:300px !important;
+margin:auto !important;
+}
+
+.product-left-v2 h1{
+font-size:48px !important;
+}
+
+.product-subtitle{
+font-size:18px !important;
+}
+
+.config-grid-v2{
+display:grid !important;
+grid-template-columns:1fr !important;
+}
+
+.material-grid{
+display:grid !important;
+grid-template-columns:1fr !important;
+}
+
+.feature-grid{
+display:grid !important;
+grid-template-columns:1fr !important;
+}
+
+.plan-grid{
+display:grid !important;
+grid-template-columns:1fr !important;
+}
+
+}
